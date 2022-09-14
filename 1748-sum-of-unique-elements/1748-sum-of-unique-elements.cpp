@@ -7,11 +7,6 @@ public:
             m[nums[i]]++;
         }
         int sum=0;
-        // set<int>s;
-        // for(auto n:m)
-        // {
-        //     s.insert(n.second);
-        // }
         for(int i=0;i<nums.size();i++)
         {
             if(m[nums[i]]==1)
