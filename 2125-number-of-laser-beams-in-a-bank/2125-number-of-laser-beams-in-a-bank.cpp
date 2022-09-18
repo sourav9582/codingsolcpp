@@ -13,16 +13,15 @@ public:
                     count++;
                 }
             }
-            if(count>0)
-        {
-            ans.push_back(count);
-        }
+            if(count>=1)
+            {
+                ans.push_back(count);
+            }
         }
         if(ans.size()<=1)
         {
             return 0;
         }
-        
         long long sum=0;
         for(int i=0;i<ans.size()-1;i++)
         {
