@@ -11,11 +11,10 @@
  */
 class Solution {
 
-    void lef(TreeNode* root, vector<int>&v)
+    void lef(TreeNode* root,vector<int>&v)
     {
         if(root==NULL)
-        
-            return ;
+            return;
         if(root->left==NULL&&root->right==NULL)
         {
             v.push_back(root->val);
@@ -32,8 +31,5 @@ class Solution {
         lef(root1,v);
         lef(root2,m);
         return v==m;
-            
-        
-        
     }
 };
