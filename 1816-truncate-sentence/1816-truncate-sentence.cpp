@@ -2,14 +2,14 @@ class Solution {
 public:
     string truncateSentence(string s, int k) {
         string q;
-        int count=0;
+        int co=0;
         for(int i=0;i<s.size();i++)
         {
             if(s[i]==' ')
             {
-                count++;
+                co++;
             }
-            if(count==k)
+            if(co==k)
                 break;
             q=q+s[i];
         }
