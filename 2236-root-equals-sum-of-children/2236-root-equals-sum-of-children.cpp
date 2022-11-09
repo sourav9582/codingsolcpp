@@ -11,8 +11,8 @@
  */
 class Solution {
 public:
-    bool checkTree(TreeNode* root) {
-        if(root->left->val+root->right->val==root->val)
+    bool checkTree(TreeNode* r) {
+        if(r->left->val+r->right->val==r->val)
         {
             return true;
         }
