@@ -12,19 +12,19 @@
 class Solution {
 public:
     
-    void help(TreeNode* l,TreeNode*r, int level)
+    void heeelp(TreeNode* l,TreeNode*r, int level)
     {
         if(level%2==0)
             swap(l->val,r->val);
         if(!l->right && !l->left)return;
         if(!l->right && !l->left)return;
-        help(l->left,r->right,level+1);
-        help(l->right,r->left,level+1);
+        heeelp(l->left,r->right,level+1);
+        heeelp(l->right,r->left,level+1);
     }
     
     TreeNode* reverseOddLevels(TreeNode* root) {
         if(!root || !root->left || !root->right) return root;
-        help(root->right,root->left,0);
+        heeelp(root->right,root->left,0);
         return root;
     }
 };
